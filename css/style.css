@@ -1,0 +1,144 @@
+/*        BASE STYLES        */
+body{
+    color: #2b2b2b;
+    font-family: 'source sans pro', sans-serif;
+}
+
+/*         GRID           */
+.full-width{
+    margin: 0 auto;
+    overflow: auto;
+    width: 90%;
+}
+.half-width{
+    float: left;
+    width: 50%;
+}
+.third-width{
+    float: left;
+    width: 33%;
+}
+
+/*         HEADER          */
+header{
+    background-image: url(/img/compresed/DSC01834.JPG);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color:white;
+}
+nav{
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    padding:0 2vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+nav ul li a:hover{
+    opacity: 1;
+}
+header h2{
+    clear: both;
+    font-family: 'lora', serif;
+    font-size: 72px;
+    line-height: 80px;
+    text-align: center;
+    padding-top: 20vh;
+}
+/*
+header h2 span{
+    color: #2b2b2b;
+}
+*/
+/*        A         */
+#A {
+    height: 100vh;
+}
+#A .full-width{
+    padding: 160px 0;
+    color: #20182d;
+}
+#A h2{
+    font-family: 'lora', serif;
+    font-size: 36px;
+    padding-left: 50px;
+}
+#A p{
+    font-size: 21px;
+    line-height: 40px;
+    text-align: justify;
+    justify-content: stretch;
+    padding: 0 50px 0 50px;
+}
+/*        B         */
+#B{
+    background-image: url(/img/compresed/DSC01832.JPG);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    color: white;
+}
+#B .full-width{
+    padding: 115px 0;
+}
+#B img{
+    height: auto;
+    width: 150px;
+    padding-bottom: 30px;
+}
+#B h3{
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+    width: 190px;
+}
+#B p{
+    font-family: 'lora', serif;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 50px;
+    text-align: justify;
+    justify-content: stretch;
+}
+/*        C         */
+#C{
+    background-color: #ebebeb;
+}
+#C .full-width{
+    padding: 130px 0;
+}
+#C img{
+    width: auto;
+    height: 350px;
+    border: 22px solid white;
+    margin-left: 155px;
+}
+#C h2{
+    font-family: 'lora', serif;
+    font-size: 36px;
+    line-height: 44px;
+}
+#C h3{
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 44px;
+    margin: -30px 0 5px 0;
+}
+#C a{
+    color: #c49075;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+#C h2, h3, a{
+    padding-left: 115px;
+}
+
