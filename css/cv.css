@@ -5,8 +5,35 @@
 #CV{
     margin: 5vh auto;
     padding: 60px 35px;
-    width: 800px;
+    width: 60vw;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*RESPONSIVENESS*/
+@media (max-width: 800px){
+    #CV{
+        width: 80vw;
+        font-size: 1rem;
+    }
+    #nav {
+        font-size: 0.9rem;
+    }
+}
+/*KaiOS*/
+@media (max-width:240px){
+    #CV{
+        width: 200px;
+        font-size: 0.6rem;
+        margin: 10px auto;
+        padding: 1vh 3.5vw;
+    }
+    #nav{
+        font-size: 0.5rem;
+        font-weight: 700;
+    }
+    .hiddeable{
+        visibility: hidden;
+        padding-bottom: 2px;
+    }
 }
 a{
     text-decoration: none;

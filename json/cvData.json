@@ -1,0 +1,98 @@
+    {
+        "example": 1,
+        "about": [
+            {
+                "name": [
+                    {
+                        "firstName": [
+                            "José",
+                            "Alonso"
+                        ],
+                        "lastName": [
+                            "Valle",
+                            "Martínez"
+                        ]
+                    }
+                ],
+                "email": "xosecristo@outlook.com",
+                "webpage": "https://xosecristo.github.io/",
+                "aboutme": "placeholder aboutme text"
+            }
+        ],
+        "education": [
+            {
+                "time": {
+                    "from": 2019,
+                    "to": 2021
+                },
+                "school": "Universidad Tencnológica del Sur de Sonora",
+                "carrer": "Desarrollo de Software Multiplataforma",
+                "activities": [
+                    "example1",
+                    "example2",
+                    "example3"
+                ]
+            }
+        ],
+        "skills": [
+            {
+                "soft": [
+                    "example1",
+                    "example2"
+                ],
+                "hard": [
+                    "example3",
+                    "example4"
+                ]
+            }
+        ],
+        "experience": [
+            {
+                "job03": [
+                    {
+                        "time": {
+                            "from": 2020,
+                            "to": 2020
+                        },
+                        "position": "Front-End Dev (Internship)",
+                        "company": "Rubisco",
+                        "activities": [
+                            "example1",
+                            "example2",
+                            "example3"
+                        ]
+                    }
+                ],
+                "job02": [
+                    {
+                        "time": {
+                            "from": 2018,
+                            "to": 2019
+                        },
+                        "position": "Capturista",
+                        "company": "Sam's Club",
+                        "activities": [
+                            "example1",
+                            "example2",
+                            "example3"
+                        ]
+                    }
+                ],
+                "job01": [
+                    {
+                        "time": {
+                            "from": 2016,
+                            "to": 2017
+                        },
+                        "position": "Bartender",
+                        "company": "Marina Fiesta",
+                        "activities": [
+                            "example1",
+                            "example2",
+                            "example3"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
