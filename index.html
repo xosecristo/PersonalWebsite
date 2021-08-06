@@ -1,140 +1,108 @@
 <!DOCTYPE html>
 
 <head>
-    <title>XS//CV</title>
+    <title>XS//HOMEPAGE</title>
+
     <!--------------------------------------------------------------------->
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/cv.css">
-    <!--------------------------------------------------------------------->
+
+
+    <!--FONTS-FONTS-FONTS-FONTS-FONTS-FONTS-FONTS-FONTS-FONTS-FONTS-FONTS-FONTS-FONTS-FONTS-FONTS-FONTS-FONTS-FONTS-->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet" type="text/css">
+    <!--FONTS-FONTS-FONTS-FONTS-FONTS-FONTS-FONTS-FONTS-FONTS-FONTS-FONTS-FONTS-FONTS-FONTS-FONTS-FONTS-FONTS-FONTS-->
+
 </head>
 
 <body>
-    <!--
-        Not today, maybe later
-    <section id="nav">
-        <p style="text-align: center;">
-            <a href="../files/CV062021_EN.pdf" target="_blank">Download CV</a> |
-            <i>Last update: 28/06/2021</i> |
-            <a href="/index.html">Take me back!</a>
-        </p>
-    </section>
 
-    
-    <script>
-        const section = document.querySelector(/*'section'*/);
-        const requestURL = '/json/cvData.json';
-        const request = new XMLHttpRequest();
-        request.open('GET', requestURL);
+    <header>
+        <div class="full-width">
 
-        request.responseType = 'json'; request.send();
+            <h2>
+                Creative Front-End Developer <br>
+                with a great variety of skills.
+            </h2>
 
-        request.onload = function () {
-            const datacv = request.response;
-            showData(datacv);
-        }
-        function showData(jsonObj) {
-            const myPara = document.createElement('h1');
-            myPara.textContent = jsonObj['about'][0]['name'][0]['firstName'][0] + ' ' + jsonObj['about'][0]['name'][0]['firstName'][1];
-            section.appendChild(myPara);
-        }
-
-    </script>
-    -->
-
-    <section id="CV">
-
-        <h1>José Alonso Valle Martínez</h1>
-        <hr class="hiddeable" style="margin: -15px auto;">
-        <h4>
-            <a href="mailto:xosecristo@outlook.com" title="Send me photos of you pets">
-                xosecristo@outlook.com</a><br>
-            <a href=" https://xosecristo.github.io/" title="you could click on 'take me back' and there's no diference">
-                xosecristo.github.io</a><br>
-        </h4>
-        <!--
-        <div id="about">
-            <h3>About</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus et doloremque placeat porro unde
-                dicta cum quibusdam, corrupti, vero amet reiciendis quia, tempora id officiis ipsum neque nostrum
-                obcaecati assumenda, corrupti, vero amet reiciendis quia, tempora id officiis ipsum neque nostrum
-                obcaecati assumenda.
-            </p>
-        </div>
-        -->
-        <div>
-            <h3>Education</h3>
-            <p>
-                2019 - PRESENT <b>Universidad Tecnológica del Sur de Sonora</b> <br>
-                <i>Multiplataform Software Developer</i>
-            </p>
-            <ul>
-                <li>Databases (SQL, Firebase).</li>
-                <li>Programming in C# and Java.</li>
-                <li>Algorithms, data structures, agile methodologies.</li>
-            </ul>
+            <nav>
+                <ul>
+                    <li><a href="#A">about</a></li>
+                    <li><a href="#B">projects</a></li>
+                    <li><a href="#C">contact</a></li>
+                    <li><a href="./pages/CV.html">cv</a></li>
+                </ul>
+            </nav>
 
         </div>
-        <div>
-            <h3>Skills</h3>
+    </header>
 
-            <p>
-                <b>Hard Skills</b>
-            <ul>
-                <li>Front-End technologies: XHTML, CSS, SCSS and SASS, React Framework, and JavaScript..</li>
-                <li>Scrum Foundation Professional Certificate (SFPC).</li>
-                <li>NGD Linux Essentials.</li>
-                <li>Experience on UI/UX and Graphic Design</li>
-                <li>C# (intermediate), Python and Lua (beginner).</li>
-                <li>Experience making wireframes and mock-ups using Figma and AdobeXD.</li>
-                <li>GIT</li>
-            </ul>
-            </p>
+    <main>
 
-            <p>
-                <b>Soft Skills</b>
-            <ul>
-                <li>Proactive.</li>
-                <li>Critical thinking.</li>
-                <li>Fluent with words.</li>
-                <li>Fast thinker.</li>
-                <li>Emotional intelligence.</li>
-                <li>Very creative person.</li>
-            </ul>
-            </p>
+        <!-- ///////////////// begin of ABOUT INFO   ///////////////// -->
 
-        </div>
-        <div>
-            <h3>Experience</h3>
+        <section id="A">
+            <div class="full-width">
+                <h2>About me, <i>Xosécristo</i> ...</h2>
+                <!--This should be some kind of About me page/Cover letter, I guess... -->
+                <div class="half-width">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum voluptas repellat commodi
+                        iste laudantium accusantium, maiores distinctio eius voluptate! Architecto, reprehenderit nihil
+                        earum laboriosam incidunt deserunt nostrum minus numquam! Perspiciatis.</p>
+                </div>
+                <!--...and this another part should be a list of projects where I've working on. -->
+                <div class="half-width">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum voluptas repellat commodi
+                        iste laudantium accusantium, maiores distinctio eius voluptate! Architecto, reprehenderit nihil
+                        earum laboriosam incidunt deserunt nostrum minus numquam! Perspiciatis.</p>
+                </div>
 
-            <p>
-                2020 - PRESENT <b>Front-End developer</b> (internship) at
-                <i>Rubisco</i> (Sonora, México)
-            </p>
+            </div>
+        </section>
+        <!-- ///////////////// end of ABOUT INFO   ///////////////// -->
 
-            <ul>
-                <li>Make and implement Figma designs into code.</li>
-                <li>Common use of React framework in different projects.</li>
-                <li>Experience with Full Remote working process.</li>
-                <li>Regular meetings with international clients.</li>
-            </ul>
+        <!---->
+        <section id="B">
+            <div class="full-width">
+                <div class="third-width">
+                    <img src="placeholder.gif" alt="placeholder">
+                    <h3>Lorem.</h3>
+                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia nostrum excepturi qui deserunt
+                        ea eaque impedit mollitia ut iusto unde debitis distinctio id, quos recusandae.</P>
+                </div>
 
-            <!---->
+                <div class="third-width">
+                    <img src="placeholder.gif" alt="placeholder">
+                    <h3>Lorem.</h3>
+                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia nostrum excepturi qui deserunt
+                        ea eaque impedit mollitia ut iusto unde debitis distinctio id, quos recusandae.</P>
+                </div>
 
-            <p>
-                Pre 2020 <b>A great variety of non-tech related jobs</b> such as...
-            </p>
-            <ul>
-                <li> <i>Data Entry Clerk</i> at Sam's Club.</li>
-                <li> <i>Bartender</i> at Marina Fiesta.</li>
-                <li> <i>Cinema Staff</i> at Cinemex.</li>
-                <li> <i>Cashier</i></li>
-            </ul>
+                <div class="third-width">
+                    <img src="placeholder.gif" alt="placeholder">
+                    <h3>Lorem.</h3>
+                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia nostrum excepturi qui deserunt
+                        ea eaque impedit mollitia ut iusto unde debitis distinctio id, quos recusandae.</P>
+                </div>
 
-        </div>
+            </div>
 
-    </section>
+        </section>
+
+        <!-- ///////////////// begin of CONTACT INFO   ///////////////// -->
+        <section id="C">
+            <div class="full-width">
+                <h2>Did I skip something else?</h2>
+                <h3>You can contact me through this email, even if you just wanna talk;</h3>
+                <a href="mailto:xosecristo@outlook.com">
+                    xosecristo@outlook.com
+                </a>
+                <h2>Send me an email, don't be afraid</h2>
+            </div>
+        </section>
+        <!-- /////////////////  end of CONTACT INFO   ///////////////// -->
+    </main>
 </body>
 
 </html>

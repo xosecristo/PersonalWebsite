@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<head>
+    <title>XS//CV</title>
+    <!--------------------------------------------------------------------->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/cv.css">
+    <!--------------------------------------------------------------------->
+</head>
+
+<body>
+    <!--
+        Not today, maybe later
+    <section id="nav">
+        <p style="text-align: center;">
+            <a href="../files/CV062021_EN.pdf" target="_blank">Download CV</a> |
+            <i>Last update: 28/06/2021</i> |
+            <a href="/index.html">Take me back!</a>
+        </p>
+    </section>
+
+    
+    <script>
+        const section = document.querySelector(/*'section'*/);
+        const requestURL = '/json/cvData.json';
+        const request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+
+        request.responseType = 'json'; request.send();
+
+        request.onload = function () {
+            const datacv = request.response;
+            showData(datacv);
+        }
+        function showData(jsonObj) {
+            const myPara = document.createElement('h1');
+            myPara.textContent = jsonObj['about'][0]['name'][0]['firstName'][0] + ' ' + jsonObj['about'][0]['name'][0]['firstName'][1];
+            section.appendChild(myPara);
+        }
+
+    </script>
+    -->
+
+    <section id="CV">
+
+        <h1>José Alonso Valle Martínez</h1>
+        <hr class="hiddeable" style="margin: -15px auto;">
+        <h4>
+            <a href="mailto:xosecristo@outlook.com" title="Send me photos of you pets">
+                xosecristo@outlook.com</a><br>
+            <a href=" https://xosecristo.github.io/" title="you could click on 'take me back' and there's no diference">
+                xosecristo.github.io</a><br>
+        </h4>
+        <!--
+        <div id="about">
+            <h3>About</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus et doloremque placeat porro unde
+                dicta cum quibusdam, corrupti, vero amet reiciendis quia, tempora id officiis ipsum neque nostrum
+                obcaecati assumenda, corrupti, vero amet reiciendis quia, tempora id officiis ipsum neque nostrum
+                obcaecati assumenda.
+            </p>
+        </div>
+        -->
+        <div>
+            <h3>Education</h3>
+            <p>
+                2019 - PRESENT <b>Universidad Tecnológica del Sur de Sonora</b> <br>
+                <i>Multiplataform Software Developer</i>
+            </p>
+            <ul>
+                <li>Databases (SQL, Firebase).</li>
+                <li>Programming in C# and Java.</li>
+                <li>Algorithms, data structures, agile methodologies.</li>
+            </ul>
+
+        </div>
+        <div>
+            <h3>Skills</h3>
+
+            <p>
+                <b>Hard Skills</b>
+            <ul>
+                <li>Front-End technologies: XHTML, CSS, SCSS and SASS, React Framework, and JavaScript..</li>
+                <li>Scrum Foundation Professional Certificate (SFPC).</li>
+                <li>NGD Linux Essentials.</li>
+                <li>Experience on UI/UX and Graphic Design</li>
+                <li>C# (intermediate), Python and Lua (beginner).</li>
+                <li>Experience making wireframes and mock-ups using Figma and AdobeXD.</li>
+                <li>GIT</li>
+            </ul>
+            </p>
+
+            <p>
+                <b>Soft Skills</b>
+            <ul>
+                <li>Proactive.</li>
+                <li>Critical thinking.</li>
+                <li>Fluent with words.</li>
+                <li>Fast thinker.</li>
+                <li>Emotional intelligence.</li>
+                <li>Very creative person.</li>
+            </ul>
+            </p>
+
+        </div>
+        <div>
+            <h3>Experience</h3>
+
+            <p>
+                2020 - PRESENT <b>Front-End developer</b> (internship) at
+                <i>Rubisco</i> (Sonora, México)
+            </p>
+
+            <ul>
+                <li>Make and implement Figma designs into code.</li>
+                <li>Common use of React framework in different projects.</li>
+                <li>Experience with Full Remote working process.</li>
+                <li>Regular meetings with international clients.</li>
+            </ul>
+
+            <!---->
+
+            <p>
+                Pre 2020 <b>A great variety of non-tech related jobs</b> such as...
+            </p>
+            <ul>
+                <li> <i>Data Entry Clerk</i> at Sam's Club.</li>
+                <li> <i>Bartender</i> at Marina Fiesta.</li>
+                <li> <i>Cinema Staff</i> at Cinemex.</li>
+                <li> <i>Cashier</i></li>
+            </ul>
+
+        </div>
+
+    </section>
+</body>
+
+</html>
