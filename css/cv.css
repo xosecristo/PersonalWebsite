@@ -3,28 +3,32 @@
     font-family: 'lora', serif;
 }
 #CV{
-    margin: 5vh auto;
-    padding: 60px 35px;
     width: 60vw;
+    margin: 5vh auto;
+    padding: 6vh 3vw;
+    
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-/*RESPONSIVENESS*/
+/*Smartphone Vertical*/
 @media (max-width: 800px){
     #CV{
         width: 80vw;
+        margin: 3vh auto;
+        padding: 1vh 5vw;
         font-size: 1rem;
     }
     #nav {
         font-size: 0.9rem;
     }
 }
-/*KaiOS*/
+/*KaiOS Vertical*/
 @media (max-width:240px){
     #CV{
         width: 200px;
-        font-size: 0.6rem;
         margin: 10px auto;
         padding: 1vh 3.5vw;
+
+        font-size: 0.6rem;
     }
     #nav{
         font-size: 0.5rem;
