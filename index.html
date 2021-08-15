@@ -10,47 +10,13 @@
 </head>
 
 <body>
-    <!--
-        Not today, maybe later
-    <section id="nav">
-        <p style="text-align: center;">
-            <a href="../files/CV062021_EN.pdf" target="_blank">Download CV</a> |
-            <i>Last update: 28/06/2021</i> |
-            <a href="/index.html">Take me back!</a>
-        </p>
-    </section>
-
-    
-    <script>
-        const section = document.querySelector(/*'section'*/);
-        const requestURL = '/json/cvData.json';
-        const request = new XMLHttpRequest();
-        request.open('GET', requestURL);
-
-        request.responseType = 'json'; request.send();
-
-        request.onload = function () {
-            const datacv = request.response;
-            showData(datacv);
-        }
-        function showData(jsonObj) {
-            const myPara = document.createElement('h1');
-            myPara.textContent = jsonObj['about'][0]['name'][0]['firstName'][0] + ' ' + jsonObj['about'][0]['name'][0]['firstName'][1];
-            section.appendChild(myPara);
-        }
-
-    </script>
-    -->
-
     <section id="CV">
 
-        <h1>José Alonso Valle Martínez</h1>
+        <h1 id="fullName"></h1>
         <hr class="hiddeable" style="margin: -15px auto;">
         <h4>
-            <a href="mailto:xosecristo@outlook.com" title="Send me photos of you pets">
-                xosecristo@outlook.com</a><br>
-            <a href=" https://xosecristo.github.io/" title="you could click on 'take me back' and there's no diference">
-                xosecristo.github.io</a><br>
+            <a id="email" href="mailto:xosecristo@outlook.com"></a><br>
+            <a id="webpage" href=" https://xosecristo.github.io/"></a><br>
         </h4>
         <!--
         <div id="about">
@@ -66,7 +32,7 @@
         <div>
             <h3>Education</h3>
             <p>
-                2019 - PRESENT <b>Universidad Tecnológica del Sur de Sonora</b> <br>
+                <b>Universidad Tecnológica del Sur de Sonora</b><br>
                 <i>Multiplataform Software Developer</i>
             </p>
             <ul>
@@ -109,7 +75,7 @@
             <h3>Experience</h3>
 
             <p>
-                2020 - PRESENT <b>Front-End developer</b> (internship) at
+                <b>Front-End developer</b> (internship) at
                 <i>Rubisco</i> (Sonora, México)
             </p>
 
@@ -123,7 +89,7 @@
             <!---->
 
             <p>
-                Pre 2020 <b>A great variety of non-tech related jobs</b> such as...
+                <b>A great variety of non-tech related jobs</b> such as...
             </p>
             <ul>
                 <li> <i>Data Entry Clerk</i> at Sam's Club.</li>
@@ -136,5 +102,7 @@
 
     </section>
 </body>
+
+<script src="/js/data.js"></script>
 
 </html>
