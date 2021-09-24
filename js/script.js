@@ -19,9 +19,7 @@ function animateSlide() {
         const revealTxt = slide.querySelector('.reveal-text');
         const img = slide.querySelector('img');
         //GSAP
-
         const SlideTimeline = gsap.timeline({ defaults: { duration: 1, ease: 'sine.inOut' } });
-
         SlideTimeline.fromTo(revealImg, { x: '0%' }, { x: '100%' });
         SlideTimeline.fromTo(revealTxt, { x: '0%' }, { x: '100%' }, '-=0.75');
         SlideTimeline.fromTo(nav, { y: '-100%' }, { y: '0%' }, '-=0.75')
@@ -29,13 +27,15 @@ function animateSlide() {
     })
 }
 
+
 function cursor(e) {
-    console.log(e);
     let mouse = document.querySelector('.cursor');
     mouse.style.top = e.pageY + 'px';
     mouse.style.left = e.pageX + 'px';
+    //please say syke
+    const CursorTimeline = gsap.timeline({ repeat: -1, yoyo: true });
+    CursorTimeline.fromTo(mouse, { scale: 0.8 }, { scale: 1.2 });
 }
 window.addEventListener("mousemove", cursor);
-
 
 animateSlide()
