@@ -56,11 +56,11 @@ function animateSlide() {
             reverse: false
         })
             .setTween(SlideTimeline)
-            .addIndicators({
-                colorStart: 'white',
-                colorTrigger: 'red',
-                name: 'slide'
-            })
+            // .addIndicators({
+            //     colorStart: 'white',
+            //     colorTrigger: 'red',
+            //     name: 'slide'
+            // })
             .addTo(controller);
 
         //Page
@@ -78,12 +78,12 @@ function animateSlide() {
             duration: "100%",
             triggerHook: 0,
         })
-            .addIndicators({
-                colorStart: 'white',
-                colorTrigger: 'red',
-                name: 'page',
-                indent: 100
-            })
+            // .addIndicators({
+            //     colorStart: 'white',
+            //     colorTrigger: 'red',
+            //     name: 'page',
+            //     indent: 100
+            // })
             .setPin(slide, { pushFollowers: false })
             .setTween(PageTimeline)
             .addTo(controller);
