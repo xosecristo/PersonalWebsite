@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&display=swap');
+@import url('http://fonts.cdnfonts.com/css/akira-expanded');
 
 @font-face {
-    font-family: "Akira Expanded", sans-serif;
-    src: url(/files/Akira\ Expanded.otf);
-}
+    font-family: 'Akira Expanded Super Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Akira Expanded Super Bold'), url('Akira Expanded Demo.woff') format('woff');
+    }
 
 :root{
     --primary: #fb9da7;
@@ -119,7 +122,7 @@ body {
     color: var(--primary)
 }
 .hero-txt h2{
-    font-family: "Akira Expanded";
+    font-family: 'Akira Expanded', sans-serif;
     font-size: 2.5rem;
 }
 .hero-txt p{
@@ -137,7 +140,6 @@ body {
     padding: 1rem 5rem;
     font-size: 1rem;
     align-self: flex-start;
-    cursor: pointer;
 }
 
 /* REVEALING */
@@ -212,10 +214,6 @@ body {
     background: var(--primary);
     /* visibility: hidden; */
 }
-.t-swipe1{
-    /* background: var(--primary); */
-}
-
 /* CURSOR */
 /* CURSOR */
 /* CURSOR */
