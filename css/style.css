@@ -15,12 +15,38 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    cursor: none !important;
 }
 
 body {
     background-color:  var(--secondary);
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
+    /* overflow: hidden; */
+}
+
+.scrollmagic-pin-spacer{
+    position: static !important;
+}
+
+/* JERARQUIA */
+
+/* 
+5 - Nav-header
+4 - Cursor, Navigation.
+3 - Page01
+2 - Page02
+1 - Page03
+*/
+
+.page01{
+    z-index: 3;
+}
+.page02{
+    z-index: 2;
+}
+.page03{
+    z-index: 1;
 }
 
 /* NAVBAR */
@@ -28,9 +54,11 @@ body {
 /* NAVBAR */
 #logo{
     font-family: 'Akira Expanded', sans-serif;
-    color:#fff
+    color:#fff;
+    top:-100%;
 }
 .nav-header{
+    z-index: 5;
     min-height: 10vh;
     display: flex;
     align-items: center;
@@ -40,6 +68,7 @@ body {
     padding: 2rem 0;
     color: #fff;
     font-size: 1rem;
+    
 }
 .line1, .line2{
     width: 3rem;
@@ -54,7 +83,7 @@ body {
 /* SECTION */
 /* SECTION */
 .slide{
-    min-height: 90vh;
+    min-height: 100vh;
     width: 80%;
     margin: 0 auto 0 auto;
     display: flex;
@@ -81,7 +110,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     flex: 1;
     flex-basis: 25rem;
     padding-left: 7rem;
@@ -97,11 +125,15 @@ body {
 .hero-txt p{
     padding: 1.3rem 0rem;
     font-size: 1.3rem;
+    /* color: #8d8d8d; */
     opacity: 0.7;
 }
 /* BUTTON */
-.explore{
-    border: solid #fff 2px;
+.btn{
+    /* color:var(--primary); */
+    font-weight: bolder;
+    color:#fff;
+    border: solid var(--primary) 2px;
     padding: 1rem 5rem;
     font-size: 1rem;
     align-self: flex-start;
@@ -114,16 +146,14 @@ body {
 .reveal-text {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 150%;
     background:var(--secondary);
     left: 0;
-    top: 0;
-
-    /* visibility: hidden; */
+    top: -15%;
 }
 
 /* MENU */
-.menu{
+.menu{  
     cursor: pointer;
 }
 
@@ -140,7 +170,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    z-index: 10;
+    /* z-index: 4; */
     
     clip-path: circle(50px at 100% -10%);
     -webkit-clip-path: circle(50px at 100% -10%);
@@ -164,17 +194,62 @@ body {
     line-height: 2rem;
 }
 
-/* CURSOS */
-/* CURSOS */
-/* CURSOS */
+/* SWIPE */
+/* SWIPE */
+/* SWIPE */
+.title{
+    position: relative;
+    overflow: hidden;
+}
+.title-swipe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    mix-blend-mode: darken;
+    transform: translateY(100%);
+    background: var(--primary);
+    /* visibility: hidden; */
+}
+.t-swipe1{
+    /* background: var(--primary); */
+}
+
+/* CURSOR */
+/* CURSOR */
+/* CURSOR */
 .cursor{
+    z-index: 4;  
     width: 3rem;
     height: 3rem;
     border: solid #fff 0.2rem;
-    /* border-radius: 50%; */
     position: absolute;
     transform: translate(-50%,-50%);
     animation: cursorDance 1s infinite alternate;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    
+}
+.cursor.nav-active{
+    z-index: -1;
+    animation-play-state: paused;
+    background: var(--primary);
+    transform: scale(2);
+}
+.cursor.btn-active{
+    z-index: 3;
+    animation-play-state: paused;
+    background:#fff;
+    transform: scale(3);
+}
+.cursor-msg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 @keyframes cursorDance {
     0%{ 
