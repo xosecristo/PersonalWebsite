@@ -1,8 +1,11 @@
 let controller;
 let slideScene;
 
-let mouse = document.querySelector('.cursor');
-let mouseMsg = mouse.querySelector('span');
+const logo = document.querySelector('#logo');
+const mouse = document.querySelector('.cursor');
+const menu = document.querySelector('.menu');
+const mouseMsg = mouse.querySelector('span');
+
 function cursor(e) {
     mouse.style.top = e.pageY + 'px';
     mouse.style.left = e.pageX + 'px';
@@ -12,23 +15,56 @@ function cursor(e) {
 }
 function activeCursor(e) {
     const item = e.target;
-    if (item.id === 'logo' || item.classList.contains('menu')) {
+    console.log(item);
+
+    if (item.id === 'logo'
+        || item.classList.contains('menu')) {
         mouse.classList.add('nav-active');
-    }
-    else {
+    } else {
         mouse.classList.remove('nav-active');
     }
+
     if (item.classList.contains('btn')) {
         mouse.classList.add('btn-active');
         gsap.to('.title-swipe', 0.75, { y: '0%' });
         mouseMsg.innerText = "🤠";
-    }
-    else {
+    } else {
         mouse.classList.remove('btn-active');
-        gsap.to('.title-swipe', 0.75, { y: '100%' });
+        gsap.to('.title-swipe', 0.75, { y: '-100%' });
         mouseMsg.innerText = "";
     }
+
+    // if (item.classList.contains('nav-link')) {
+    //     mouse.classList.add('link-active');
+    // } else {
+    //     mouse.classList.remove('link-active');
+    // }
 }
+
+function toggle(e) {
+    if (!e.target.classList.contains('active')) {
+        e.target.classList.add('active');
+        document.body.classList.add('nav');
+        gsap.to('.line1', 0.5, { rotate: '45', y: 5, background: 'var(--primary)' });
+        gsap.to('.line2', 0.5, { rotate: '-45', y: -5, background: 'var(--primary)' });
+        gsap.to('.navigation', 1, { clipPath: 'circle(2500px at 100% -10%)' });
+        gsap.to('#logo', 1, { color: 'var(--primary)' })
+        logo.classList.add('nav');
+        menu.classList.add('nav');
+
+    } else {
+        e.target.classList.remove('active');
+        document.body.classList.remove('nav');
+        gsap.to('.line1', 0.5, { rotate: '0', y: 0, background: '#fff' });
+        gsap.to('.line2', 0.5, { rotate: '0', y: 0, background: '#fff' });
+        gsap.to('.navigation', 1, { clipPath: 'circle(50px at 100% -10%)' });
+        gsap.to('#logo', { color: '#fff' })
+        logo.classList.remove('nav');
+        menu.classList.remove('nav');
+    }
+
+}
+menu.addEventListener('click', toggle);
 window.addEventListener('mousemove', cursor);
 window.addEventListener('mouseover', activeCursor);
 
