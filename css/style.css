@@ -68,7 +68,6 @@ body {
 }
 #logo{
     font-family: 'Akira Expanded', sans-serif;
-    text-shadow: 0 0 5px var(--secondary);
     color:#fff;
     top:-100%;
 }
@@ -198,6 +197,7 @@ body.nav{
 }
 .contact p {
     font-family: "Monserrat", sans-serif;
+    text-align: justify;
     font-size: 1.5rem;
     line-height: 2rem;
 }

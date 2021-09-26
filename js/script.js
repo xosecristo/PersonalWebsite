@@ -48,7 +48,7 @@ function toggle(e) {
         gsap.to('.line1', 0.5, { rotate: '45', y: 5, background: 'var(--primary)' });
         gsap.to('.line2', 0.5, { rotate: '-45', y: -5, background: 'var(--primary)' });
         gsap.to('.navigation', 1, { clipPath: 'circle(2500px at 100% -10%)' });
-        gsap.to('#logo', 1, { color: 'var(--primary)' })
+        gsap.to('#logo', 1, { color: 'var(--primary)', textShadow: '0 0 5px var(--secondary);' })
         logo.classList.add('nav');
         menu.classList.add('nav');
 
@@ -57,7 +57,7 @@ function toggle(e) {
         document.body.classList.remove('nav');
         gsap.to('.line1', 0.5, { rotate: '0', y: 0, background: '#fff' });
         gsap.to('.line2', 0.5, { rotate: '0', y: 0, background: '#fff' });
-        gsap.to('.navigation', 1, { clipPath: 'circle(50px at 100% -10%)' });
+        gsap.to('.navigation', 1, { clipPath: 'circle(50px at 100% -10%)', textShadow: 'none' });
         gsap.to('#logo', { color: '#fff' })
         logo.classList.remove('nav');
         menu.classList.remove('nav');
