@@ -27,7 +27,13 @@ function activeCursor(e) {
     if (item.classList.contains('btn')) {
         mouse.classList.add('btn-active');
         gsap.to('.title-swipe', 0.75, { y: '0%' });
-        mouseMsg.innerText = "🤠";
+
+        if (item.classList.contains('email')) {
+            mouseMsg.innerText = "💌";
+            //✉
+        } else {
+            mouseMsg.innerText = "🤠";
+        }
     } else {
         mouse.classList.remove('btn-active');
         gsap.to('.title-swipe', 0.75, { y: '-100%' });
