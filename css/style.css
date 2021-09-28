@@ -17,7 +17,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 #logo:hover, .menu:hover, .btn:hover{
@@ -98,6 +97,9 @@ body {
     flex:1;
     flex-basis: 25rem;
 }
+.mobile-hero{
+    display: none;
+}
 .hero-img img {
     width: 100%;
     height: 100%;
@@ -158,7 +160,6 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: #fff; */
     background: var(--secondary) url("/img/navigation-bg.png") no-repeat;
     display: flex;
     justify-content: space-around;
@@ -167,8 +168,6 @@ body {
     color: #fff;
     text-shadow: 0 0 5px var(--secondary);
     z-index: 1;
-    
-    /* visibility: hidden; */
 
     clip-path: circle(50px at 100% -10%);
     -webkit-clip-path: circle(50px at 100% -10%);
@@ -267,8 +266,105 @@ body.nav{
 /* SMALL SCREENS */
 /* SMALL SCREENS */
 /* SMALL SCREENS */
-@media (max-width: 800px){
+@media (max-width : 1024px) {
+    /* CURSOR */
+    body{
+        cursor: default !important;
+    }
+    #logo:hover, .menu:hover, .btn:hover{
+        cursor: pointer !important;
+    }
+    .cursor{
+        visibility: hidden;
+    }
+    /* NAVBAR */
+    .nav-header{
+        min-height: 10vh;
+        padding: 1rem 0;
+    }
+    .menu{
+        padding: 10px 0;
+        border: solid var(--primary) 2px;
+    }
+    .line1, .line2{
+        width: 2.5rem;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
 
+    /* SECTION */
+    .slide{
+        width: 80%;
+        min-height: 90vh;
+    }
+    /* HERO */
+    .hero-txt{
+        padding-left: 5vw;
+    }
+    .hero-txt h2{
+        font-size: 1.5rem;
+    }
+    .hero-txt p{
+        font-size: 1rem;
+    }
+    .btn{
+        width: 100%;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    /* NAVIGATION */
+    .navigation{
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+    .contact{
+        flex-basis: 0;
+        width: 80%;
+        padding-top: 10vh;
+    }
+    .contact p {
+        margin-top: 3vh;
+    }
+    .nav-links{
+        display: inline-flex;
+    }
+    .nav-links h3{
+        padding: 3.5rem;
+    }
+
+}
+
+@media (max-width: 700px){
+    /* NAVBAR */
+    .menu{
+        padding: 5px 0;
+    }
+    /* SECTION */
+    .slide{
+        flex-direction: column;
+    }
+    /* HERO */
+    .main-hero{
+        display: none;
+    }
+    .mobile-hero{
+        display: block;
+        padding: 0;
+        margin: auto;
+        
+    }
+    .hero-img img{
+        object-fit:contain;
+    }
+    .hero-txt{
+        position: relative;
+        padding: 0;
+        justify-content: start;
+    }
+    .title-swipe, .reveal-img, .reveal-text{
+        display: none;
+    }
 }
 
 /* KAIOS SCREENS */

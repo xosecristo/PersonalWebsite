@@ -39,12 +39,6 @@ function activeCursor(e) {
         gsap.to('.title-swipe', 0.75, { y: '-100%' });
         mouseMsg.innerText = "";
     }
-
-    // if (item.classList.contains('nav-link')) {
-    //     mouse.classList.add('link-active');
-    // } else {
-    //     mouse.classList.remove('link-active');
-    // }
 }
 
 function toggle(e) {
@@ -89,6 +83,7 @@ function animateSlide() {
 
         SlideTimeline.fromTo(revealImg, { x: '0%' }, { x: '100%' });
         SlideTimeline.fromTo(revealTxt, { x: '0%' }, { x: '100%' }, '-=0.75');
+
         SlideTimeline.fromTo(nav, { y: '-100%' }, { y: '0%' }, '-=0.75');
 
         //Scene
