@@ -9,9 +9,6 @@ const mouseMsg = mouse.querySelector('span');
 function cursor(e) {
     mouse.style.top = e.pageY + 'px';
     mouse.style.left = e.pageX + 'px';
-    //please say syke
-    // const CursorTimeline = gsap.timeline({ repeat: -1, yoyo: true });
-    // CursorTimeline.fromTo(mouse, { scale: 0.8 }, { scale: 1.2 });
 }
 function activeCursor(e) {
     const item = e.target;

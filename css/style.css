@@ -276,6 +276,7 @@ body.nav{
     .cursor{
         visibility: hidden;
     }
+
     /* NAVBAR */
     .nav-header{
         min-height: 10vh;
@@ -386,5 +387,39 @@ body.nav{
 /* KAIOS SCREENS */
 /* KAIOS SCREENS */
 @media (max-width:240px){
+    /* NAVBAR */
+    .nav-header{
+        width: 90%;
+        /* justify-content: center; */
+    }
+    #logo{
+        font-size: 1.3rem;
+        /* color: var(--primary) */
+    }
+    .menu, .navigation, .hero-img img{
+        display: none;
+    }
+    /* SECTION */
+    .slide{
+        display: initial;
+    }
 
+    /* HERO */
+    .hero-txt{
+        padding: 0 1rem 1rem 1rem;
+    }
+    .hero-txt h2{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    .hero-txt p{
+        font-size: 0.9rem;
+    }
+    .page01 .btn, .page03 .hero-txt .title, .page03 .hero-txt p{
+        display: none;
+    }
+    .btn{
+        padding: 1rem 0;
+        /* background-color: var(--primary); */
+    }
 }
