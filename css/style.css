@@ -186,6 +186,10 @@ body.nav{
 .nav-links h3{
     padding: 2.5rem 5rem;
 }
+.nav-links h3 :hover{
+    transition: 0.5s;
+    color: var(--primary)
+}
 .contact{
     flex-basis: 50rem;
 }
