@@ -97,13 +97,13 @@ body {
     flex:1;
     flex-basis: 25rem;
 }
-.mobile-hero{
-    display: none;
-}
 .hero-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.mobile-hero{
+    display: none;
 }
 .hero-txt{
     display: flex;
@@ -202,6 +202,58 @@ body.nav{
     text-align: justify;
     font-size: 1.5rem;
     line-height: 2rem;
+}
+
+/* CARDS */
+/* CARDS */
+/* CARDS */
+.card-container{
+    /* border: 3px solid rebeccapurple; */
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+.card{
+    width: 25rem;
+    height: auto;
+    border: solid var(--primary) 2px;
+    padding: 2rem;
+}
+.card-action .btn:hover{
+    transition: 0.5s;
+    background-color: var(--primary);
+}
+.card h1{
+    margin-bottom: 1rem;
+}
+.card-img{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.card img{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+}
+.card-desc{
+    line-height: 1.6rem;
+    margin-bottom: 1rem;
+    /* text-align: justify; */
+}
+.card-action .btn{
+    transition: 0.7s;
+    display: flex;
+    justify-content: center;
+    
+}
+.card-action .btn.alt{
+    margin-top: 1.5rem;
+    /* background-color: var(--primary); */
 }
 /* SWIPE */
 /* SWIPE */
