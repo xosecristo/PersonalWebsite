@@ -38,6 +38,9 @@ body {
     cursor: none !important;
 }
 
+.mobile{
+    display: none;
+}
 
 .scrollmagic-pin-spacer{
     position: static !important;
@@ -321,7 +324,7 @@ body.nav{
 /* SMALL SCREENS */
 /* SMALL SCREENS */
 /* SMALL SCREENS */
-@media (max-width : 1080px) {
+@media (max-width : 1600px) {
     /* CURSOR */
     body{
         cursor: default !important;
@@ -445,7 +448,6 @@ body.nav{
     .card-container{
         flex-direction: column;
         align-content: center;
-        justify-content: center;
     }
     .card{
         width: 90%;
@@ -455,16 +457,35 @@ body.nav{
     .card h1{
         display: none;
     }
+    .card-img{
+        margin: 0;
+    }
     .card img{
+        padding: 0;
+        margin: 0;
         height: 10rem; 
         width: 10rem;
     }
     .card-desc{
         line-height: 1.5rem;
-        padding: 1rem;
+        padding: 0 1rem;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .card-action{
+        display: flex;
+        justify-content: space-evenly;
+        align-items:stretch;
+        flex-direction: column;
+        height: auto;
     }
     .card-action .btn{
-        padding: 0.5rem;
+        padding: 1rem 2rem;
+    }
+    .card-action .btn.alt{
+        margin: 0;
     }
     /* NAVIGATION */
     .contact h2{
@@ -481,6 +502,46 @@ body.nav{
     .nav-links h3{
         font-size: 2rem;
         padding: 2rem;
+    }
+}
+
+@media (max-width: 360px){
+    
+    /* .slide{
+        min-height: auto;
+    } */
+    
+    /* CARDS */
+    .card-container{
+        justify-content: center;
+        align-content: center;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0.5rem;
+        padding: 1rem;
+        background-color: var(--secondary);
+    }
+    .card h1{
+        display: block;
+        text-align: center;
+    }
+    .card img{
+        width: 90%;
+    }
+    .card-img{
+        margin-bottom: 1rem;
+    }
+    .card-desc{
+        margin-bottom: 1rem;
+    }
+    .card-action .btn.alt{
+        margin-top: 1rem;
+    }
+    .non-responsive{
+        display: none;
     }
 }
 
