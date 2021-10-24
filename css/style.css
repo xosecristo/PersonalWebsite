@@ -164,6 +164,7 @@ section.projects{
 }
 .card-content{
     display: flex;
+    justify-content: space-between;
     padding: 1rem;
 }
 .card-img img{
