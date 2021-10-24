@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap');
 @import url('//fonts.cdnfonts.com/css/akira-expanded');
 
-/* @font-face {
+@font-face {
     font-family: 'Akira Expanded Super Bold';
     font-style: normal;
     font-weight: normal;
     src: local('Akira Expanded Super Bold'), url('files/Akira Expanded Demo.woff') format('woff');
-    } */
+    }
 
 :root {
     --primary: #fb9da7;
     --secondary: #13141a;
+    --secondary-alt: rgba(0, 0, 0, 0.25);
 }
 
 * {
@@ -18,7 +19,205 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background: #fff;
+    min-height: 10vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    z-index: 10;
+}
+#logo{
+    font-size: 1.5rem;
+    font-family: 'Akira Expanded', sans-serif;
+}
+.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+.nav-btn{
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    z-index: 20;
+}
+.line1, .line2{
+    width: 3rem;
+    height: 0.1rem;
+    margin: 0.4rem;
+    background: #000;
+    pointer-events: none;
+}
+nav{
+    display: none;
+    position: absolute;
+    right: -1rem;
+    top: 1.2rem;
+    width: 25%;
+    height: fit-content;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+}
+nav .active{
+    display: flex;
+}
+nav h2{
+    font-family: 'Akira Expanded', sans-serif;
+    text-align: center;
+    margin: 1rem 0;
+}
+nav ul{
+    list-style: none;
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.25rem;
+}
+/* SECTION */
+section{
+    min-height: 90vh;
+    width: 90%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* SECTION -> About Me */
+.hero-txt{
+    width: 50%;
+}
+.title{
+    font-size: 2rem;
+    font-family: 'Akira Expanded', sans-serif;
+}
+.hero-txt .title{
+    margin-bottom: 2rem;
+}
+.hero-txt p{
+    opacity: 0.7;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.btn-group{
+    width: max-content;
+}
+.hero-txt .note{
+    width: auto;
+    text-align: center;
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+}
+.btn-group .btn{
+    margin-right: 1rem;
+}
+
+.hero-img img{
+    border-radius: 25px;
+}
+
+.btn{
+    text-decoration: none;
+    border:solid var(--secondary-alt) 1px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 14rem;
+    padding: 1rem 0;
+    color:var(--secondary-alt);
+    font-size: 1rem;
+    font-weight: 900;
+}
+.btn.primary{
+    border: none;
+    background-color: var(--secondary-alt);
+    color:#fff;
+}
+
+/* SECTION -> Projects */
+section.projects{
+    flex-direction: column;
+    justify-content: center;
+}
+.projects .row{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+.card{
+    width: 650px;
+    height: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin-bottom: 5vh;
+}
+.card-content{
+    display: flex;
+    padding: 1rem;
+}
+.card-img img{
+    width: 7rem;
+    height: auto;
+    border-radius: 30px;
+}
+.card-info{
+    margin: 0 1rem;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+.card-title{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.card-desc{
+    color: var(--secondary-alt);
+}
+.card-content .btn-group{
+    /* background-color: violet; */
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-content .btn-group .btn{
+    width: 8rem;
+    margin-right: 0;
+}
+
+/* SECTION -> Contact */
+section.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-info{
+    width: 25vw;
+    text-align: center;
+}
+.contact-info .title{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.contact-info p{
+    opacity: 0.7;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+/* body{
     width: 100%;
     height: 100vh;
     background: var(--primary);
@@ -32,11 +231,9 @@ main{
     border-radius: 50px;
     background: var(--secondary);
     font-family: 'Poppins', sans-serif;
-    /* box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
     display: flex;  
 }
-/* Navigation */
-/* Navigation */
 aside{
     width: 15%;
     height: 100%;
@@ -62,7 +259,6 @@ aside a{
     text-decoration: none;
     margin-bottom: 1rem;
 }
-/* NAVIGATION end */
 section{
     width: 85%;
     height: 100%;
@@ -83,7 +279,6 @@ div.main h1{
 div.main h1 b{
     font-weight: 700;
 }
-/* ABOUT ME */
 div.about{
     width: 30%;
     height: 100%;
@@ -140,8 +335,8 @@ div.about-card .name{
     div.about-card .name{
         margin-left: 25px;
     }
-}
-/* main{
+} 
+main{
     display: flex;
     border-radius: 50px;
     background: var(--primary);
