@@ -23,6 +23,10 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+main{
+    background: url("/img/contact-me_bg.png") no-repeat center bottom;
+    background-size: 100% auto;
+}
 header{
     background: #fff;
     min-height: 10vh;
@@ -108,35 +112,51 @@ section{
     font-size: 1.25rem;
     margin-bottom: 2rem;
 }
-
-.btn-group{
-    width: max-content;
-}
-.hero-txt .note{
-    width: auto;
-    text-align: center;
-    font-size: 0.7rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0;
+.hero-img{
+    margin-right: 5vw;
 }
 .hero-img img{
     border-radius: 25px;
 }
-.btn{
+.btn-group{
+    width: max-content;
+}
+.btn-group p{
+    font-size: 0.7rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+.btn-group a{
     text-decoration: none;
-    border:solid var(--secondary-alt) 1px;
+}
+.btn{
+    display: inline-block;
     background-color: #fff;
+    padding: 1rem 5rem;
     border-radius: 10px;
-    width: 14rem;
-    padding: 1rem 0;
-    color:var(--secondary-alt);
+    border:solid var(--secondary) 1px;
+    color:var(--secondary);
     font-size: 1rem;
-    font-weight: 900;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+}
+.btn.primary:first-child{
+    margin-right: 1.5rem;
 }
 .btn.primary{
     border: none;
-    background-color: var(--secondary-alt);
+    background-color: var(--secondary);
     color:#fff;
+}
+.btn.secondary{
+    padding: 0.75rem;
+}
+.btn.secondary:hover{
+    background-color: var(--secondary);
+    color: #fff;
+    transition: 0.15s;
 }
 
 /* SECTION -> Projects */
@@ -157,6 +177,11 @@ section.projects{
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
     margin-bottom: 5vh;
+    transition: 0.15s;
+}
+.card:hover{
+    background-color: rgba(0, 0, 0, 0.01);
+    transition: 0.15s;
 }
 .card-content{
     display: flex;
@@ -181,7 +206,7 @@ section.projects{
     font-size: 1.5rem;
 }
 .card-desc{
-    color: var(--secondary-alt);
+    opacity: 0.5;
 }
 .card-content .btn-group{
     /* background-color: violet; */
@@ -200,10 +225,12 @@ section.contact{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .contact-info{
     width: 25vw;
     text-align: center;
+    margin-bottom: 15rem;
 }
 .contact-info .title{
     font-size: 2.5rem;
@@ -212,9 +239,12 @@ section.contact{
 .contact-info p{
     opacity: 0.7;
     font-size: 1.25rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 @media screen and (max-width: 390px){
+    main{
+        background: url();
+    }
     /* SECTION */
     section{
         flex-wrap: wrap;
@@ -292,6 +322,7 @@ section.contact{
     /* CONTACT */
     .contact-info{
         width: 90%;
+        margin: 0;
     }
     .contact-info .title{
         font-size: 2rem;
