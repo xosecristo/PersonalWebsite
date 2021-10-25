@@ -1,4 +1,6 @@
 const mode = document.querySelector('body');
+const lightresume = document.querySelector('#light-resume');
+const darkresume = document.querySelector('#dark-resume');
 const modeBtn = document.querySelector('#mode');
 const menu = document.querySelector('.nav-btn');
 const nav = document.querySelector('nav');
@@ -26,14 +28,18 @@ menu.addEventListener('click', showMenu);
 
 function changeMode() {
     if (mode.classList.contains('light')) {
-        console.log("es de día")
+        console.log("es de día, adios día")
         modeBtn.innerText = "🌞";
         mode.classList.remove('light');
+        lightresume.classList.add("hidden")
+        darkresume.classList.remove("hidden")
         mode.classList.add('dark');
     } else {
-        console.log("es de noche")
+        console.log("es de noche, adios noche")
         modeBtn.innerText = "🌛";
         mode.classList.remove('dark');
+        darkresume.classList.add("hidden")
+        lightresume.classList.remove("hidden")
         mode.classList.add('light');
     }
 };

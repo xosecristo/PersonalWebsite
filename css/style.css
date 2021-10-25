@@ -56,6 +56,9 @@ body.dark{
 .dark #mode{
     background: #fff;
 }
+.hidden{
+    display: none !important;
+}
 main{
     background: url("/img/contact-me_bg.png") no-repeat center bottom;
     background-size: 100% auto;
@@ -211,7 +214,7 @@ section{
     background: var(--secondary);
     color: #fff;
 }
-.btn-group .btn.primary:first-child{
+.btn-group .primary{
     margin-right: 1.5rem;
 }
 .btn.primary{
