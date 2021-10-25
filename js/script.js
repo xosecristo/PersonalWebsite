@@ -1,3 +1,5 @@
+const mode = document.querySelector('body');
+const modeBtn = document.querySelector('#mode');
 const menu = document.querySelector('.nav-btn');
 const nav = document.querySelector('nav');
 
@@ -22,4 +24,16 @@ function showMenu(e) {
 
 menu.addEventListener('click', showMenu);
 
-// animateSlide()
+function changeMode() {
+    if (mode.classList.contains('light')) {
+        console.log("es de día")
+        modeBtn.innerText = "🌞";
+        mode.classList.remove('light');
+        mode.classList.add('dark');
+    } else {
+        console.log("es de noche")
+        modeBtn.innerText = "🌛";
+        mode.classList.remove('dark');
+        mode.classList.add('light');
+    }
+};

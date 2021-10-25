@@ -9,8 +9,8 @@
     }
 
 :root {
-    --primary: #fb9da7;
-    --secondary: #13141a;
+    --primary: #FB9DA7;
+    --secondary: #13141A;
     --secondary-alt: rgba(0, 0, 0, 0.25);
 }
 
@@ -22,13 +22,46 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    
+}
+body.light{
+    background: #fff;
+}
+body.dark{
+    background: var(--secondary);
+}
+
+#mode{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border: none;
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem;
+    font-size: 1.25rem;
+    border-radius: 50px;
+    display: inline-block;
+    opacity: 0.7;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#mode:hover{
+    transition: 0.5s;
+    opacity: 1;
+}
+.light #mode{
+    background-color: var(--secondary);
+}
+.dark #mode{
+    background: #fff;
 }
 main{
     background: url("/img/contact-me_bg.png") no-repeat center bottom;
     background-size: 100% auto;
 }
 header{
-    background: #fff;
+    /* background: #fff; */
     min-height: 10vh;
     width: 90%;
     display: flex;
@@ -37,9 +70,27 @@ header{
     margin: auto;
     z-index: 10;
 }
+.light header{
+    background: #fff;
+}
+.dark header{
+    background: var(--secondary);
+}
 #logo{
     font-size: 1.5rem;
     font-family: 'Akira Expanded', sans-serif;
+    cursor: pointer;
+    transition: 0.15s;
+}
+.light #logo{
+    color:var(--secondary);
+}
+.dark #logo{
+    color: #fff;
+}
+#logo:hover{
+    transition: 0.15s;
+    color:var(--primary);
 }
 .sticky{
     position: -webkit-sticky;
@@ -49,16 +100,30 @@ header{
 .nav-btn{
     cursor: pointer;
     border: none;
-    background-color: #fff;
     z-index: 20;
+}
+.light .nav-btn{
+    background-color: #fff;
+}
+.dark .nav-btn{
+    background: var(--secondary);
 }
 .line1, .line2{
     width: 3rem;
     height: 0.1rem;
     margin: 0.4rem;
-    background: #000;
+    
     pointer-events: none;
 }
+.light .line1, .light .line2{
+    background: var(--secondary);
+}
+.dark .line1, .dark .line2{
+    background: #fff;
+}
+/* NO ME OLVIDES */
+/* NO ME OLVIDES */
+/* NO ME OLVIDES */
 nav{
     display: none;
     position: absolute;
@@ -86,6 +151,9 @@ nav ul{
     margin: 1rem 0;
     font-size: 1.25rem;
 }
+/* NO ME OLVIDES */
+/* NO ME OLVIDES */
+/* NO ME OLVIDES */
 /* SECTION */
 section{
     min-height: 90vh;
@@ -97,26 +165,25 @@ section{
 }
 
 /* SECTION -> About Me */
-.hero-txt{
+.hero{
     width: 50%;
 }
-.title{
-    font-size: 2rem;
-    font-family: 'Akira Expanded', sans-serif;
+.dark .hero{
+    color: #fff;
 }
-.hero-txt .title{
+.hero h2{
+    font-size: 3rem;
+    font-family: 'Akira Expanded', sans-serif;
     margin-bottom: 2rem;
 }
-.hero-txt p{
+.hero p{
     opacity: 0.7;
     font-size: 1.25rem;
     margin-bottom: 2rem;
 }
-.hero-img{
-    margin-right: 5vw;
-}
-.hero-img img{
+.about img{
     border-radius: 25px;
+    margin-right: 5vw;
 }
 .btn-group{
     width: max-content;
@@ -126,9 +193,6 @@ section{
     text-align: center;
     margin-top: 0.5rem;
     margin-bottom: 0;
-}
-.btn-group a{
-    text-decoration: none;
 }
 .btn{
     display: inline-block;
@@ -142,20 +206,46 @@ section{
     text-align: center;
     text-decoration: none;
 }
-.btn.primary:first-child{
+.dark .btn{
+    border:solid #fff 1px;
+    background: var(--secondary);
+    color: #fff;
+}
+.btn-group .btn.primary:first-child{
     margin-right: 1.5rem;
 }
 .btn.primary{
     border: none;
     background-color: var(--secondary);
     color:#fff;
+    transition: 0.15s;
+}
+.dark .btn.primary{
+    background: #fff;
+    color:var(--secondary);
+}
+.btn.primary:hover{
+    transition: 0.15s;
+    background: var(--primary);
+    
+}
+.light .btn.primary:hover{
+    color:var(--secondary);
+}
+.dark .btn.primary:hover{
+    color:#fff;
 }
 .btn.secondary{
     padding: 0.75rem;
 }
-.btn.secondary:hover{
+.light .btn.secondary:hover{
     background-color: var(--secondary);
     color: #fff;
+    transition: 0.15s;
+}
+.dark .btn.secondary:hover{
+    background-color: #fff;
+    color: var(--secondary);
     transition: 0.15s;
 }
 
@@ -171,24 +261,29 @@ section.projects{
     /* align-items: center; */
 }
 .card{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
     width: 650px;
-    height: auto;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+    height: 100%;
     border-radius: 20px;
     margin-bottom: 5vh;
     transition: 0.15s;
+}
+.light .card{
+    color:var(--secondary);
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+}
+.dark .card{
+    border: solid 1px #fff;
+    color:#fff;
 }
 .card:hover{
     background-color: rgba(0, 0, 0, 0.01);
     transition: 0.15s;
 }
-.card-content{
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-}
-.card-img img{
+.card img{
     width: 7rem;
     height: auto;
     border-radius: 30px;
@@ -199,23 +294,22 @@ section.projects{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* background-color: aqua; */
 }
-.card-title{
+.card-info h3{
     font-weight: bold;
     font-size: 1.5rem;
 }
-.card-desc{
+.card-info p{
     opacity: 0.5;
 }
-.card-content .btn-group{
+.card .btn-group{
     /* background-color: violet; */
     height: 7rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.card-content .btn-group .btn{
+.card .btn-group .btn{
     width: 8rem;
     margin-right: 0;
 }
@@ -225,42 +319,52 @@ section.contact{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
-.contact-info{
+.contact-card{
     width: 25vw;
     text-align: center;
     margin-bottom: 15rem;
 }
-.contact-info .title{
+.light .contact-card{
+    color:var(--secondary);
+}
+.dark .contact-card{
+    color:#fff;
+}
+.contact-card h2{
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
-.contact-info p{
+.contact-card p{
     opacity: 0.7;
     font-size: 1.25rem;
     margin-bottom: 2rem;
 }
-@media screen and (max-width: 390px){
+@media screen and (max-width: 600px){
     main{
         background: url();
+    }
+    .line1, .line2{
+        width: 2rem;
+        height: 0.1rem;
+        margin: 0.4rem;
     }
     /* SECTION */
     section{
         flex-wrap: wrap;
         justify-content: center;
     }
-    .hero-txt{
+    .hero{
         width: 90%;
     }
-    .hero-txt .title{
-        font-size: 1.25rem;
+    .hero h2{
+        font-size: 2rem;
         margin-bottom: 1rem;
     }
-    .hero-txt .title span{
+    .hero h2 span{
         display: none;
     }
-    .hero-txt p{
+    .hero p{
         font-size: 1rem;
         line-height: 1.8rem;
         margin: 1rem 0;
@@ -270,17 +374,17 @@ section.contact{
         width: auto;
         flex-direction: column;
     }
-    .hero-txt .btn-group .btn{
+    .hero .btn-group .btn{
         width: 100%;
     }
     .btn-group .btn.primary{
         margin-bottom: 0.75rem;
     }
-    .hero-txt .note{
+    .hero .note{
         font-size: 0.6rem;
     }
     
-    .hero-img{
+    .about img{
         display: none;
     }
     /* PROJETS */
@@ -290,41 +394,39 @@ section.contact{
     }
     .card{
         width: 90%;
-    }
-    .card-content{
         display: inline;
     }
-    .card-img img{
+    .card img{
         display: none;
     }
     .card-info{
         height: auto;
         margin-bottom: 1rem;
     }
-    .card-title{
+    .card-info h3{
         font-size: 1.5rem;
         margin-bottom: 1rem;
     }
-    .card-content .btn-group{
+    .card .btn-group{
         flex-direction: row;
         height: auto;
         /* margin-bottom: 1rem; */
         margin: 1rem 1rem;
     }
-    .card-content .btn-group .btn{
-        width: 35vw;
+    .card .btn-group .btn{
+        width: 30vw;
     }
-    .card-content .btn-group .btn.primary{
+    .card .btn-group .btn.primary{
         margin:0;
     }
 
 
     /* CONTACT */
-    .contact-info{
+    .contact-card{
         width: 90%;
         margin: 0;
     }
-    .contact-info .title{
+    .contact-card h2{
         font-size: 2rem;
     }
 
