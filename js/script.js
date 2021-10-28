@@ -1,7 +1,9 @@
 const mode = document.querySelector('body');
+const modeBtn = document.querySelector('#mode');
 const lightresume = document.querySelector('#light-resume');
 const darkresume = document.querySelector('#dark-resume');
-const modeBtn = document.querySelector('#mode');
+
+
 const menu = document.querySelector('.nav-btn');
 const nav = document.querySelector('nav');
 

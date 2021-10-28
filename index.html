@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NewVersion</title>
+    <title>XS Portfolio</title>
+    <link rel="icon" href="/img/favicon.gif">
     <link rel="stylesheet" href="/css/style.css">
-    <meta name="description" content="UI/UX developer portfolio">
+    <meta name="description" content="Xosecristo's online portfolio">
     <meta name="author" content="xosecristo">
 
 
 </head>
 
-<body class="light">
+<body class="dark">
     <!-- NAVBAR -->
     <header class="sticky">
         <h1 id="logo">
@@ -38,25 +39,31 @@
         <section class="about">
             <div class="hero">
                 <h2>
-                    <!-- UI / UX  -->Front end<br><span>Web </span>developer
+                    <!-- UI / UX  -->
+                    Front end<br><span>Web </span>developer
                 </h2>
-                <p>“Elevator pitch” about me as a developer, worker, and person in general. Lorem ipsum dolor sit, amet
-                    consectetur adipisicing elit. Placeat, neque. You can meet me through my:</p>
+                <p>
+                    Welcome,
+                    <!-- I'm a front end developer, especializing in user experience and efective visual design, -->
+                    My name is Xosecristo. I'm a web delevoper especialing in user interface/user experience
+                    and efective visual design. I'm glad you're here so you can get to know me through my:
+                </p>
                 <div class="btn-group">
-                    <a href="/files/RESUME011_ENG-LIGHT.pdf" target="_blank" id="light-resume" class="btn primary">
+                    <a href="/files/RESUME011_ENG-LIGHT.pdf" target="_blank" id="light-resume"
+                        class="hidden btn primary">
                         Resume
                     </a>
-                    <a href="/files/RESUME011_ENG-DARK.pdf" target="_blank" id="dark-resume" class="hidden btn primary">
+                    <a href="/files/RESUME011_ENG-DARK.pdf" target="_blank" id="dark-resume" class="btn primary">
                         Resume
                     </a>
-                    <a href="/files/CV.pdf" target="_blank" class="btn">hola diego</a>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#work" class="btn">Work</a>
+                    <p>All the data here presented is for informative purposes.</p>
                 </div>
             </div>
             <img src="/img/test.jpg" alt="Picture of myself, Xosecristo">
         </section>
         <!---->
-        <section class="projects">
+        <section id="work" class="projects">
             <div class="row">
                 <div class="card">
                     <img src="/img/card-img-01.png" alt="Project display preview.">
@@ -70,7 +77,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/img/card-img-02.png" alt="Project display preview.">
+                    <img src="/img/project-preview/001.png" alt="Project display preview.">
                     <div class="card-info">
                         <h3>Video BG Landing Page</h3>
                         <p>A simple landing page with a video background. Video thanks to Pavel Danilyuk.</p>
@@ -86,22 +93,21 @@
         <section class="contact">
             <div class="contact-card">
                 <h2>
-                    Contact me
+                    Get in touch
                 </h2>
                 <p>
-                    You can contact me bla bla if you want me to involved in bla bla bunny facts, lorem ipsum bla bla,
-                    send me an email.
+                    Did you know bunnies can live easily 8 years? If you wanna get to lean more about it, or just for
+                    even more interesting bunny facts:
                 </p>
                 <a href="mailto:xosecristo@outlook.com" target="_blank" class="btn primary">
-                    Get in touch
+                    Send me an email
                 </a>
             </div>
         </section>
     </main>
 
     <button id="mode" onclick="changeMode()">
-        <!-- 🌝 -->
-        🌛
+        🌞
     </button>
 
     <!--GSAP(GreenSock)-->
