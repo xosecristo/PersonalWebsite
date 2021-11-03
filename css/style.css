@@ -32,6 +32,11 @@ body.dark{
     background: var(--secondary);
 }
 
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
 #mode{
     position: fixed;
     bottom: 0;
@@ -60,8 +65,13 @@ body.dark{
 .hidden{
     display: none !important;
 }
-main{
-    background: url("/img/contact-me_bg.png") no-repeat center bottom;
+
+.light main{
+    background: url("/img/contact-me_bg-LIGHT.png") no-repeat center bottom;
+    background-size: 100% auto;
+}
+.dark main{
+    background: url("/img/contact-me_bg-DARK.png") no-repeat center bottom;
     background-size: 100% auto;
 }
 header{
@@ -116,7 +126,6 @@ header{
     width: 3rem;
     height: 0.1rem;
     margin: 0.4rem;
-    
     pointer-events: none;
 }
 .light .line1, .light .line2{
@@ -346,7 +355,7 @@ section.contact{
 }
 /* SMARTPHONE */
 @media screen and (max-width: 700px){
-    main{
+    .light main, .dark main{
         background: url();
     }
     .line1, .line2{
@@ -419,7 +428,7 @@ section.contact{
         margin: 1rem 1rem;
     }
     .card .btn-group .btn{
-        width: 30vw;
+        width: auto;
     }
     .card .btn-group .btn.primary{
         margin:0;
@@ -432,7 +441,11 @@ section.contact{
         margin: 0;
     }
     .contact-card h2{
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+    .contact-card .btn{
+        font-size: 0.8rem;
+        padding: 1rem 2rem;
     }
 
 }
