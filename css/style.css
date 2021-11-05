@@ -184,12 +184,12 @@ section{
 .dark .hero{
     color: #fff;
 }
-.hero h1{
+.hero h2{
     font-size: 3rem;
     font-family: 'Akira Expanded', sans-serif;
     margin-bottom: 2rem;
 }
-.hero h2{
+.hero h3{
     font-size: 1.5rem;
     color:var(--primary);
 }
@@ -313,7 +313,7 @@ section.projects{
     flex-direction: column;
     justify-content: space-between;
 }
-.card-info h2{
+.card-info h3{
     font-weight: bold;
     font-size: 1.5rem;
 }
