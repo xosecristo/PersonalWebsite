@@ -37,6 +37,8 @@ a {
     color:inherit;
 }
 
+/* BOTÓN PARA CAMBIAR ENTRE MODO OSCURO Y CLARO */
+/* BOTÓN PARA CAMBIAR ENTRE MODO OSCURO Y CLARO */
 #mode{
     position: fixed;
     bottom: 0;
@@ -56,6 +58,9 @@ a {
     transition: 0.5s;
     opacity: 1;
 }
+/* BOTÓN PARA CAMBIAR ENTRE MODO OSCURO Y CLARO */
+/* BOTÓN PARA CAMBIAR ENTRE MODO OSCURO Y CLARO */
+
 .light #mode{
     background-color: var(--secondary);
 }
@@ -75,7 +80,6 @@ a {
     background-size: 100% auto;
 }
 header{
-    /* background: #fff; */
     min-height: 10vh;
     width: 90%;
     display: flex;
@@ -349,7 +353,7 @@ section.contact{
 .dark .contact-card{
     color:#fff;
 }
-.contact-card h1{
+.contact-card h2{
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: var(--primary);
@@ -455,15 +459,6 @@ section.contact{
 
 }
 /* TABLET */
-@media screen and (min-width:100px){
-    /* .card{
-        font-size: 0.75rem;
-        width: 45%;
-    }
-    .card h3{
-        font-size: 1.25rem;
-    }
-} */
 @media screen and (min-width:701px) and (max-width:1400px) {
     /* ABOUT */
     .hero h2{
@@ -471,7 +466,7 @@ section.contact{
     }
     .about img{
         /* margin: 0; */
-        width: 35%;
+        width: 45%;
     }
     /* PROJECTS */
     .projects .row{
@@ -485,20 +480,5 @@ section.contact{
     }
     .card:first-child{
         display: none;
-    }
-}
-
-@media screen and (min-height:1080px){
-    .about img {
-        display: none;
-    }
-    .hero{
-        width: 90%;
-    }
-    .hero p{
-        font-size: 1.5rem;
-    }
-    .btn-group p{
-        font-size: 1rem;
     }
 }
