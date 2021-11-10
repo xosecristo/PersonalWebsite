@@ -1,4 +1,6 @@
-# xosecristo.dev
-Personal website who works as a portfolio. Made in HTML, CSS, JS, and a little bit of Gsap.
+# XS Portfolio Repository
+This is the repository for my personal website who works as a portfolio. 
+
+Made in HTML, CSS, and JS, and  little bit of Gsap.
 
 
