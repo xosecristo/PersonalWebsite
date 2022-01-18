@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XS Portfolio</title>
-    <link rel="icon" href="/img/favicon.gif">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/assets/img/favicon.gif">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <meta name="description" content="Xosecristo's online portfolio">
     <meta name="author" content="xosecristo">
 </head>
@@ -34,7 +34,7 @@
         <section id="start" class="about">
             <div class="hero">
                 <h2>
-                    <!-- UI / UX  -->Front end <br><span>Web </span>developer
+                    UI / UX <br><span>Web </span>developer
                 </h2>
                 <h3>Welcome</h3>
                 <p>
@@ -42,18 +42,19 @@
                     effective visual design. I'm glad you're here so you can get to know me through my:
                 </p>
                 <div class="btn-group">
-                    <a href="/files/RESUME_ENG-LIGHT.pdf" target="_blank" id="light-resume" class="hidden btn primary">
+                    <a href="/assets/files/RESUME_ENG-LIGHT.pdf" target="_blank" id="light-resume"
+                        class="hidden btn primary">
                         Resume
                     </a>
-                    <a href="/files/RESUME_ENG-DARK.pdf" target="_blank" id="dark-resume" class="btn primary">
+                    <a href="/assets/files/RESUME_ENG-DARK.pdf" target="_blank" id="dark-resume" class="btn primary">
                         Resume
                     </a>
                     <a href="#work" class="btn">Work</a>
                     <p>All the data presented here is for informative purposes only.</p>
                 </div>
             </div>
-            <img src="/img/hero-img_light.png" alt="Picture of myself, Xosecristo" id="light-img" class="hidden">
-            <img src="/img/hero-img_dark.png" alt="Picture of myself, Xosecristo" id="dark-img">
+            <img src="/assets/img/hero-img_light.png" alt="Picture of myself, Xosecristo" id="light-img" class="hidden">
+            <img src="/assets/img/hero-img_dark.png" alt="Picture of myself, Xosecristo" id="dark-img">
         </section>
         <!---->
         <section id="work" class="projects">
@@ -61,7 +62,7 @@
             <h2 class="hidden">Projects</h2>
             <div class="row">
                 <div class="card">
-                    <img src="/img/project-preview/001.png" alt="Project color palette.">
+                    <img src="/assets/img/project-preview/001.png" alt="Project color palette.">
                     <div class="card-info">
                         <h3>Creative Agency Website</h3>
                         <p>Site for a fake creative agency. Fully-mobile responsive. Made in vanilla HTML and CSS.</p>
@@ -73,7 +74,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/img/project-preview/002.png" alt="Project color palette.">
+                    <img src="/assets/img/project-preview/002.png" alt="Project color palette.">
                     <div class="card-info">
                         <h3>Video BG Landing Page</h3>
                         <p>Modern-looking landing page with video background. Media thanks to Pavel Danilyuk.</p>
@@ -89,20 +90,7 @@
             <!-- Two rows for non-so-small screens (tablet, 720p) -->
             <div class="row">
                 <div class="card">
-                    <img src="/img/project-preview/003.png" alt="Project color palette.">
-                    <div class="card-info">
-                        <h3>Web Music player</h3>
-                        <p>Simple online music player made using the Audio api from HTML5. Made in JavaScript. Let's
-                            listen to some City Pop!</p>
-                    </div>
-                    <div class="btn-group">
-                        <a href="//xs-sample-musicplayer.netlify.app/" target="_blank" class="btn secondary">DEMO</a>
-                        <a href="//github.com/xosecristo/sample_MusicPlayer" target="_blank"
-                            class="btn secondary">Repository</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="/img/project-preview/004.png" alt="Project color palette.">
+                    <img src="/assets/img/project-preview/004.png" alt="Project color palette.">
                     <div class="card-info">
                         <h3>Interactive Online Schedule</h3>
                         <p>Interactive schedule web aplication with a fresh and modern look and feel following the
@@ -114,16 +102,28 @@
                             class="btn secondary">Repository</a>
                     </div>
                 </div>
+                <div class="card">
+                    <img src="/assets/img/project-preview/005.png" alt="Project color palette.">
+                    <div class="card-info">
+                        <h3>CRM Manager Concept</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laudantium aliquid tempora.
+                        </p>
+                    </div>
+                    <div class="btn-group">
+                        <a href="//kind-swartz-822247.netlify.app/" target="_blank" class="btn secondary">DEMO</a>
+                        <a href="//www.figma.com/community/file/1050763261692741182/CRM-Manager" target="_blank"
+                            class="btn secondary">Design</a>
+                    </div>
+                </div>
             </div>
-            <p>
-                Click <a href="//github.com/xosecristo?tab=repositories" target="_blank"><u><b>here</b></u></a> to see
-                more projects in my Github profile.
-            </p>
+            <p><a href="//github.com/xosecristo?tab=repositories" target="_blank">Click <u><b>here</b></u> to see
+                    more projects in my Github profile.</a></p>
         </section>
         <section class="contact">
             <div class="contact-card">
                 <h2>Get in touch</h2>
-                <p>Did you know bunnies can easily live 8 years? For more magnificent bunny facts... </p>
+                <p>If you need any other piece of data about me or my work, or simply to have a talk with me, feel free
+                    to reach out for me.</p>
                 <a href="mailto:xosecristo@outlook.com" target="_blank" class="btn primary">Send me an email</a>
                 <a href="#start"><br><br>...or <u>get to the top</u> of the page!</a>
             </div>
@@ -135,10 +135,10 @@
     </button>
 
     <!--GSAP(GreenSock)-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"
         integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/script.js"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="/assets/js/script.js"></script>
 </body>
 
 </html>

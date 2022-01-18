@@ -5,7 +5,7 @@
     font-family: 'Akira Expanded Super Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('Akira Expanded Super Bold'), url('files/Akira Expanded Demo.woff') format('woff');
+    src: local('Akira Expanded Super Bold'), url('/assets/files/Akira Expanded Demo.woff') format('woff');
     }
 
 :root {
@@ -72,11 +72,11 @@ a {
 }
 
 .light main{
-    background: url("/img/contact-me_bg-LIGHT.png") no-repeat center bottom;
+    background: url("/assets/img/contact-bg_Light.png") no-repeat center bottom;
     background-size: 100% auto;
 }
 .dark main{
-    background: url("/img/contact-me_bg-DARK.png") no-repeat center bottom;
+    background: url("/assets/img/contact-bg_Dark.png") no-repeat center bottom;
     background-size: 100% auto;
 }
 header{
@@ -347,7 +347,7 @@ section.contact{
 .contact-card{
     width: 35vw;
     text-align: center;
-    margin-bottom: 15rem;
+    margin-bottom: 25rem;
 }
 .light .contact-card{
     color:var(--secondary);
